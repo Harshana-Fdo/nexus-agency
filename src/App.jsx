@@ -1,21 +1,33 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Intro from './components/Intro'
 import Services from './components/Services'  
-function App() {
-  const [count, setCount] = useState(0)
+import Work from './components/Work'
+import Cursor from './components/Cursor'
+import ScrollWrapper from './components/ScrollWrapper';
+import Footer from './components/Footer';
 
+function App() {
   return (
     <>
+      
+      <Cursor />
+      
+      
       <Navbar />
-      <Hero />
-      <Intro />
-      <Services />
+
+      <ScrollWrapper>
+      
+        <Hero />
+        <Intro />
+        <Work />
+        <Services />
+        
+        
+        <Footer />  
+      </ScrollWrapper>
     </>
   )
 }

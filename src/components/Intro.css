@@ -1,20 +1,55 @@
 .intro {
-  padding: 100px 10%;
-  background: #0a0a0a;
-  text-align: center;
+  padding: 150px 10%; 
+  background: #050505;
   color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.intro-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-  color: #007bff;
+.container {
+  max-width: 1000px;
 }
 
-.intro-content p {
-  font-size: 1.1rem;
+.intro-sub {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  color: #ff0000; 
+  display: block;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: clamp(2rem, 5vw, 4rem); 
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+.intro-details {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.intro-details p {
+  font-size: 1.2rem;
   line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #aaa;
+  color: #888;
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .intro-details {
+    justify-content: flex-start;
+  }
 }

@@ -1,0 +1,42 @@
+.scroll-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-color: #000000;
+  position: relative;
+}
+
+.section-wrapper {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.content-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Scrollbar එක හැංගීම */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
