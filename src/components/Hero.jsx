@@ -1,12 +1,12 @@
 import React from 'react';
-import { motion } from 'framer-motion'; // Animation සඳහා
+import { motion } from 'framer-motion'; 
 import './Hero.css';
 
 function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
-        {/* අකුරු පහළ සිට ඉහළට මතු වන Animation එක */}
+      
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
