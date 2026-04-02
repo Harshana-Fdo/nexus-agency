@@ -9,4 +9,12 @@
   pointer-events: none; 
   z-index: 9999;
   mix-blend-mode: difference; 
+  transition: transform 0.1s ease-out;
+}
+
+/* Mobile සහ Tablet වලදී Cursor එක හංගමු */
+@media (max-width: 1024px) {
+  .custom-cursor {
+    display: none;
+  }
 }

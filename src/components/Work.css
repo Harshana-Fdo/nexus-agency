@@ -1,17 +1,16 @@
 .work-section {
   padding: 100px 5%;
   background: #000;
-   width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto; 
+  min-height: 100vh;
 }
 
 .work-title {
-font-size: clamp(3rem, 10vw, 8rem); 
+  font-size: clamp(3rem, 10vw, 8rem); 
   font-weight: 900;
-  
   color: rgba(255, 255, 255, 0.05); 
   text-align: left;
- 
   position: relative;
   z-index: 1;
   text-transform: uppercase;
@@ -21,11 +20,11 @@ font-size: clamp(3rem, 10vw, 8rem);
 }
 
 .work-grid {
- display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   position: relative;
-  z-index: 2; /* Title එකට වඩා උඩින් */
+  z-index: 2;
 }
 
 .work-item {
@@ -60,5 +59,77 @@ font-size: clamp(3rem, 10vw, 8rem);
   padding-bottom: 10px;
 }
 
-.work-info h3 { font-size: 1.5rem; letter-spacing: 2px; }
-.work-info span { color: #ff0000; font-size: 0.8rem; }
+.work-info h3 { 
+  font-size: 1.5rem; 
+  letter-spacing: 2px; 
+  color: #fff;
+}
+
+.work-info span { 
+  color: #ff0000; 
+  font-size: 0.8rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+/* Tablets & Small Laptops */
+@media (max-width: 1024px) {
+  .work-grid {
+    gap: 30px;
+  }
+  .work-img-wrapper {
+    height: 400px; 
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .work-section {
+    padding: 60px 20px;
+  }
+
+  .work-title {
+    font-size: 4rem; 
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+
+  .work-img-wrapper {
+    height: 300px; 
+    border-radius: 5px;
+  }
+
+  .work-info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .work-item:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* කුඩාම Phones සඳහා */
+@media (max-width: 480px) {
+  .work-title {
+    font-size: 3rem;
+  }
+  
+  .work-img-wrapper {
+    height: 250px;
+  }
+  
+  .work-info {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
