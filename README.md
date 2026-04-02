@@ -1,16 +1,30 @@
-# React + Vite
+# Nexus Digital - Interactive Agency Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance Single Page Application (SPA) developed as a recruitment assignment for 3CS. This project focuses on seamless user experience, bold typography, and smooth transition effects using React.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**Netlify URL:** [https://storied-syrniki-123b68.netlify.app/](https://storied-syrniki-123b68.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
+- **Interactive Hero Section:** High-impact visual with clean navigation.
+- **Smooth Transitions:** Custom scroll-snapping and fade-in effects between sections.
+- **Modern UI/UX:** Minimalist dark-themed design with bold typography.
+- **Fully Responsive:** Optimized for Desktop, Tablet, and Mobile devices.
+- **Performance Optimized:** Built with Vite for fast HMR and optimized builds.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** Modern CSS (Flexbox, Grid, Clamp for Responsive Typography)
+- **Deployment:** Netlify
+- **Version Control:** Git & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+- `src/components`: Contains reusable UI components (Hero, Intro, Work, Services, Footer).
+- `src/assets`: Project images and icons.
+- `App.jsx`: Main application logic and layout wrapper.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔧 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [YOUR_GITHUB_REPOSITORY_URL]
