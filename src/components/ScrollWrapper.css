@@ -1,28 +1,23 @@
 .scroll-container {
-  height: 100vh;
-  height: 100svh; 
-  width: 100%;
-  overflow-y: auto; 
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  height: 100vh !important;
+  width: 100% !important;
+  overflow-y: scroll !important; /* hidden වෙනුවට scroll දැම්මා */
+  overflow-x: hidden !important;
+  scroll-snap-type: y proximity !important; /* mandatory වෙනුවට proximity දැම්මා ලේසියෙන් scroll කරන්න */
+  scroll-behavior: smooth !important;
   background-color: #000000;
-  position: relative;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
 }
 
 .section-wrapper {
-  min-height: 100vh;
-  width: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  display: flex;
+  min-height: 100vh !important;
+  width: 100% !important;
+  scroll-snap-align: start !important;
+  display: flex !important;
+  flex-direction: column !important;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-color: #000000;
 }
-
 .content-inner {
   width: 100%;
   height: 100%;
